@@ -1,0 +1,38 @@
+body{
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+#header{   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #414141; 
+    padding-left: 700px;
+}
+#main{
+    color: #989898;
+    height: 60px;
+    padding-left: 700px;
+    margin-top: -30px;
+}
+#jhon{
+    color: #A0A0A0 ;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+#jhon1{
+    padding-left: 70px;
+    padding-top: 50px;
+    
+}
+#boton{
+    background: #6923FF;
+    color: #FFFFFF;
+    display:inline-block;
+    font-size: 1.25em;
+    margin-left: 1200px;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    border-radius: 50px;
+    
+}
