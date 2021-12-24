@@ -7,7 +7,7 @@
       </h1>
     </div>
     <div class="ui huge labels category">
-      <div class="ui label">REGISTRO DEL NACIDO</div>
+      <div class="ui label"><router-link to="/"><i class="fas fa-chevron-left"></i></router-link> REGISTRO DEL NACIDO</div>
     </div>
     <div class="ui two column doubling stackable grid container">
       <div class="column">

@@ -58,7 +58,8 @@
       </div>
     </div>
     <div class="btn-continuar">
-      <button class="ui button purple"><router-link to="/registro">Continuar</router-link><i class="play icon" style="padding-left: 16px"></i></button>
+      <router-link to="/registro"><button class="ui button purple">Continuar<i class="play icon" style="padding-left: 16px"></i></button></router-link>
+      
     </div>
     <!-- <div class="ui vertical divider" /> -->
   </div>
