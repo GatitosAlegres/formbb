@@ -9,12 +9,13 @@
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/misestilos.css">
 </head>
 <body>
     <header class="container-fluid mt-8 mr-8 ml-8 ">
         <div class="row">
             <div class="col">
-                    <H1 class="text-2xl "><a href="registroN.html"><i class="fa-solid fa-angle-left"></i></a> REGISTRO DE LOS PADRES</H1>
+                    <H1 class="text-2xl " style="color: #A0A0A0;font-weight: 600;"><a href="registroN.html"><i class="fa-solid fa-angle-left"></i></a> REGISTRO DE LOS PADRES</H1>
             </div>
         </div>
         </header>
@@ -22,8 +23,14 @@
         
 
         <div class="container-fluid mr-12 ml-12">
-            <div class="grid grid-cols-2 gap-40">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-40">
                 <form action="">
+                    <div class="text-center">
+                    <div><i class="fas fa-mars fa-4x" style="color: blue;"></i></div>
+                        
+                    <div><label for="" style="font-weight: bold;">PAPÁ</label></div>
+                    <br>
+                </div>
                     <div>
                         <label for="">Apellidos y Nombres</label>
                         <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 mb-2 py-1 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
@@ -33,20 +40,43 @@
                     <div>
                         <label for="">Estado civil</label>
                         <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            <option>Amazonas</option>
-                            <option>Áncash</option>
-                            <option>Apurímac</option>
-                            <option>Apurímac</option>     
+                            <option>Soltero</option>
+                            <option>Casado</option>
+                            <option>Viudo</option>
+                            <option>Divorciado</option>     
                           </select></div>
                     </div>
 
                     <div>
                         <label for="">Edad</label>
                         <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            <option>Amazonas</option>
-                            <option>Áncash</option>
-                            <option>Apurímac</option>
-                            <option>Apurímac</option>     
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>  
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option> 
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>  
+                            <option>30</option>
+                            <option>31</option>
+                            <option>32</option>
+                            <option>33</option> 
+                            <option>34</option>
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option> 
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>    
                           </select></div>
                     </div>
                 </div>
@@ -59,25 +89,30 @@
                 <div>
                     <label for="">Nacionalidad</label>
                     <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                        <option>Amazonas</option>
-                        <option>Áncash</option>
-                        <option>Apurímac</option>
-                        <option>Apurímac</option>     
+                        <option>Peruano</option>
+                        <option>Extrangero</option>    
                       </select></div>
                 </div>
 
                 <div>
                     <label for="">Domicilio</label>
                     <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                        <option>Amazonas</option>
-                        <option>Áncash</option>
-                        <option>Apurímac</option>
-                        <option>Apurímac</option>     
+                        <option>Jr. Miguel Cervantes #103</option>
+                            <option>Av. Ayacuho #206</option>
+                            <option>Ah. Tambo real #211</option>
+                            <option>Av. Maria Parado #605</option>      
                       </select></div>
                 </div>
                 </form>
 
                 <form action="">
+                    <div class="text-center">
+                        <div><i class="fas fa-venus fa-4x" style="color: red;"></i></div>     
+                        <div><label for="" style="font-weight: bold;">MAMÁ</label></div>
+                        <br>
+                    </div>
+
+                    
                     <div>
                         <label for="">Apellidos y Nombres</label>
                         <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 mb-2 py-1 px-3 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
@@ -88,20 +123,43 @@
                         <div>
                             <label for="">Estado civil</label>
                             <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                <option>Amazonas</option>
-                                <option>Áncash</option>
-                                <option>Apurímac</option>
-                                <option>Apurímac</option>     
+                                <option>Soltera</option>
+                                <option>Casada</option>
+                                <option>Viuda</option>
+                                <option>Divorciada</option>    
                               </select></div>
                         </div>
     
                         <div>
                             <label for="">Edad</label>
                             <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                                <option>Amazonas</option>
-                                <option>Áncash</option>
-                                <option>Apurímac</option>
-                                <option>Apurímac</option>     
+                                <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>  
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option> 
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>  
+                            <option>30</option>
+                            <option>31</option>
+                            <option>32</option>
+                            <option>33</option> 
+                            <option>34</option>
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option> 
+                            <option>38</option>
+                            <option>39</option>
+                            <option>40</option>     
                               </select></div>
                         </div>
                     </div>
@@ -114,20 +172,18 @@
                     <div>
                         <label for="">Nacionalidad</label>
                         <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            <option>Amazonas</option>
-                            <option>Áncash</option>
-                            <option>Apurímac</option>
-                            <option>Apurímac</option>     
+                            <option>Peruana</option>
+                            <option>Extrangera</option>     
                           </select></div>
                     </div>
     
                     <div>
                         <label for="">Domicilio</label>
                         <div class="col"><select id="country" name="country" autocomplete="country-name" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                            <option>Amazonas</option>
-                            <option>Áncash</option>
-                            <option>Apurímac</option>
-                            <option>Apurímac</option>     
+                            <option>Jr. Miguel Cervantes #103</option>
+                            <option>Av. Ayacuho #206</option>
+                            <option>Ah. Tambo real #211</option>
+                            <option>Av. Maria Parado #605</option>     
                           </select></div>
                     </div>
                 </form>
@@ -136,7 +192,7 @@
         </div>
         <br>
 
-        <div class="px-4 py-3  text-right sm:px-6 mr-5">
+        <div class="px-4 py-3  text-right sm:px-6 mr-6">
             <a href="registroA.html"><button type="submit"
                 class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Continuar >
