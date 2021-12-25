@@ -16,17 +16,26 @@
       <div class="column">
         <div class="ui segment">
           <form class="ui form">
-            <div class="four wide field">
-              <label>Oficialia N°</label>
-              <input type="number" name="oficialia" />
+            <h3 class="ui header">Datos generales</h3>
+            <div class="ui blue segment">
+              <InputText :title="'Apellido Paterno'" />
+              <InputText :title="'Apellido Materno'" />
+              <InputText :title="'Nombres'" />
             </div>
-            <div class="four wide field">
-              <label>Libro N°</label>
-              <input type="number" name="libro" />
-            </div>
-            <div class="four wide field">
-              <label>Acta N°</label>
-              <input type="number" name="acta" />
+            <h3 class="ui header">Fecha y Hora</h3>
+            <div class="ui blue segment">
+              <div class="field" id="date">
+                <p class="ui tiny header" style="padding-right: 16px">
+                  Fecha de Nacimiento
+                </p>
+                <input type="date" />
+              </div>
+              <div class="field" style="display: flex; align-items: center">
+                <p class="ui tiny header" style="padding-right: 40px">
+                  Hora de <br />nacimiento
+                </p>
+                <input type="time" style="width: 12rem" />
+              </div>
             </div>
           </form>
         </div>
@@ -35,32 +44,46 @@
         <div class="ui segment">
           <form class="ui form">
             <div class="field">
-              <label>Departamento</label>
-              <select
-                name="departamentos"
-                id="departamentos"
-                class="ui fluid dropdown"
-              >
-                <option value="">Cajamarca</option>
-              </select>
+              <InputNumber :title="'N° de certificado de nacimiento'" />
+            </div>
+            <h3 class="ui header">Lugar de Nacimiento</h3>
+            <div class="ui blue segment">
+              <div class="field">
+                <ComboBox
+                  :first-item="'Selecione una región'"
+                  :title-combo="'Regiones'"
+                  :items="regionesPeru"
+                />
+              </div>
+              <div class="field">
+                <ComboBox
+                  :first-item="'Selecione una provincia'"
+                  :title-combo="'Provincia'"
+                />
+              </div>
+              <div class="field">
+                <ComboBox
+                  :first-item="'Selecione una Localidad'"
+                  :title-combo="'Localidad'"
+                />
+              </div>
             </div>
             <div class="field">
-              <label>Municipio o Delegación</label>
-              <select name="municipio" id="municipio" class="ui fluid dropdown">
-                <option value="">Yonan-Tembladera</option>
-              </select>
+              <ComboBox
+                :first-item="'Clinica, Hospital, Centro de Salud o Hogar'"
+                :title-combo="'Donde se atendio el parto'"
+              />
             </div>
             <div class="field">
-              <label>Localidad</label>
-              <select name="localidad" id="localidad" class="ui fluid dropdown">
-                <option value="">Tembladera</option>
-              </select>
+              <label>Fue Registrado</label>
+              <InputCheckBox :first-option="'Muerto'" :second-option="'Vivo'" />
             </div>
-            <div class="field" id="date">
-              <p class="ui tiny header" style="padding-right: 16px">
-                Fecha de Registro
-              </p>
-              <i class="calendar outline icon large orange"></i>
+            <div class="field">
+              <ComboBox
+                :first-item="'Seleccione una opción'"
+                :title-combo="'Comparecio'"
+                :items="['Mama', 'Papa']"
+              />
             </div>
           </form>
         </div>
@@ -70,9 +93,7 @@
       <button class="ui button purple">
         Continuar<i class="play icon" style="padding-left: 16px"></i>
       </button>
-      <ComboBox :title-combo='titleCombo' :items='ciudades' />
     </div>
-    <!-- <div class="ui vertical divider" /> -->
   </div>
 </template>
 
@@ -97,32 +118,35 @@
   padding-left: 1em;
 }
 
+.field {
+  padding-bottom: 0.5rem;
+}
+
 #date {
   display: flex;
 }
 </style>
 <script>
-
 import ComboBox from "../components/ComboBox.vue";
+import Inputs from "../containers/Inputs";
+import Data from "../data/db.js";
 
-const ciudades = [
-  "Cajamarca",
-  "Cajabamba",
-  "Celendin",
-  "Chota",
-  "Contumaza",
-];
+const { regionesPeru } = Data;
+const { InputNumber, InputCheckBox, InputText } = Inputs;
 
 export default {
   name: "NewbornR",
   data: () => ({
     title: "Registro del Nacido",
     subtitle: "Registro Civil",
-    titleCombo: "Ciudades",
-    ciudades: ciudades
+    titleCombo: "Regiones",
+    regionesPeru,
   }),
-  components: { 
-    ComboBox 
-  }
+  components: {
+    ComboBox,
+    InputNumber,
+    InputCheckBox,
+    InputText,
+  },
 };
 </script>
