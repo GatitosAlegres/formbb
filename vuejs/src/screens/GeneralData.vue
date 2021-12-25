@@ -15,15 +15,15 @@
           <form class="ui form">
             <div class="four wide field">
               <label>Oficialia N°</label>
-              <input type="number" name="oficialia"/>
+              <input type="number" name="oficialia" />
             </div>
             <div class="four wide field">
               <label>Libro N°</label>
-              <input type="number" name="libro"/>
+              <input type="number" name="libro" />
             </div>
             <div class="four wide field">
               <label>Acta N°</label>
-              <input type="number" name="acta"/>
+              <input type="number" name="acta" />
             </div>
           </form>
         </div>
@@ -33,7 +33,11 @@
           <form class="ui form">
             <div class="field">
               <label>Departamento</label>
-              <select name="departamentos" id="departamentos" class="ui fluid dropdown">
+              <select
+                name="departamentos"
+                id="departamentos"
+                class="ui fluid dropdown"
+              >
                 <option value="">Cajamarca</option>
               </select>
             </div>
@@ -50,16 +54,20 @@
               </select>
             </div>
             <div class="field" id="date">
-                <p class="ui tiny header" style="padding-right: 16px">Fecha de Registro</p>
-                <i class="calendar outline icon large orange"></i>
+              <p class="ui tiny header" style="padding-right: 16px">
+                Fecha de Registro
+              </p>
+              <i class="calendar outline icon large orange"></i>
             </div>
           </form>
         </div>
       </div>
     </div>
     <div class="btn-continuar">
-      <router-link to="/registro"><button class="ui button purple">Continuar<i class="play icon" style="padding-left: 16px"></i></button></router-link>
-      
+      <router-link to="/registro"
+        ><button class="ui button purple">
+          Continuar<i class="play icon" style="padding-left: 16px"></i></button
+      ></router-link>
     </div>
     <!-- <div class="ui vertical divider" /> -->
   </div>
@@ -94,9 +102,9 @@
 <script>
 export default {
   name: "GeneralData",
-  props: {
-    title: String,
-    subtitle: String,
-  },
+  data: () => ({
+    title: "ACTA DE NACIMIENTO",
+    subtitle: "Registro Civil"
+  })
 };
 </script>

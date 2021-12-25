@@ -1,11 +1,5 @@
 <template>
   <div class="ui container general-data">
-    <div class="title">
-      <h1 class="ui header">
-        {{ title }}
-        <h3 class="sub header">{{ subtitle }}</h3>
-      </h1>
-    </div>
     <div class="ui huge labels category">
       <div class="ui label">
         <router-link to="/"><i class="fas fa-chevron-left"></i></router-link>
@@ -52,7 +46,7 @@
                 <ComboBox
                   :first-item="'Selecione una región'"
                   :title-combo="'Regiones'"
-                  :items="regionesPeru"
+                  :items="regionsPeru"
                 />
               </div>
               <div class="field">
@@ -90,9 +84,10 @@
       </div>
     </div>
     <div class="btn-continuar">
-      <button class="ui button purple">
-        Continuar<i class="play icon" style="padding-left: 16px"></i>
-      </button>
+      <router-link to="/padres"
+        ><button class="ui button purple">
+          Continuar<i class="play icon" style="padding-left: 16px"></i></button
+      ></router-link>
     </div>
   </div>
 </template>
@@ -129,9 +124,9 @@
 <script>
 import ComboBox from "../components/ComboBox.vue";
 import Inputs from "../containers/Inputs";
-import Data from "../data/db.js";
+import data from "../data/db.js";
 
-const { regionesPeru } = Data;
+const { regionsPeru } = data;
 const { InputNumber, InputCheckBox, InputText } = Inputs;
 
 export default {
@@ -140,7 +135,7 @@ export default {
     title: "Registro del Nacido",
     subtitle: "Registro Civil",
     titleCombo: "Regiones",
-    regionesPeru,
+    regionsPeru,
   }),
   components: {
     ComboBox,
