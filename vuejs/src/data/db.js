@@ -75,5 +75,5 @@ export default {
   regionsPeru,
   ages,
   civilStatus,
-  nationalities
+  nationalities,
 };

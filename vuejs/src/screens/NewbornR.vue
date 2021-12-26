@@ -15,6 +15,22 @@
               <InputText :title="'Apellido Paterno'" />
               <InputText :title="'Apellido Materno'" />
               <InputText :title="'Nombres'" />
+              <div class="fields">
+                <div
+                  class="field"
+                  style="display: flex; gap: 1rem; padding-top: 1rem"
+                >
+                  <div class="ui small header">Sexo</div>
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="gender" tabindex="0" />
+                    <label>Masculino</label>
+                  </div>
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="gender" tabindex="1" />
+                    <label>Femenino</label>
+                  </div>
+                </div>
+              </div>
             </div>
             <h3 class="ui header">Fecha y Hora</h3>
             <div class="ui blue segment">
