@@ -1,7 +1,7 @@
 <template>
   <form class="ui form">
     <div class="field">
-      <label>{{title}}</label>
+      <label>{{ title }}</label>
       <input type="text" name="" placeholder="" />
     </div>
   </form>

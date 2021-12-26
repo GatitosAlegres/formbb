@@ -20,7 +20,7 @@
     <div class="field">
       <InputText :title="'Ocupacion'" />
     </div>
-    <div class="field">
+    <div class="field five wide">
       <ComboBox
         :titleCombo="'Nacionalidad'"
         :items="nationalities"

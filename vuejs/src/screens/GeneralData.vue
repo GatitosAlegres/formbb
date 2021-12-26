@@ -57,7 +57,7 @@
               <p class="ui tiny header" style="padding-right: 16px">
                 Fecha de Registro
               </p>
-              <i class="calendar outline icon large orange"></i>
+              <input type="date" />
             </div>
           </form>
         </div>
@@ -104,7 +104,7 @@ export default {
   name: "GeneralData",
   data: () => ({
     title: "ACTA DE NACIMIENTO",
-    subtitle: "Registro Civil"
-  })
+    subtitle: "Registro Civil",
+  }),
 };
 </script>

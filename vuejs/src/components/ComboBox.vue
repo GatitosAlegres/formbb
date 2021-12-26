@@ -2,11 +2,7 @@
   <form class="ui form">
     <div class="field">
       <label>{{ titleCombo }}</label>
-      <select 
-        name="name" 
-        id="departamentos" 
-        class="ui search dropdown"
-      >
+      <select name="name" id="departamentos" class="ui search dropdown">
         <option :value="a">{{ firstItem }}</option>
         <option
           v-for="(item, index) in items"

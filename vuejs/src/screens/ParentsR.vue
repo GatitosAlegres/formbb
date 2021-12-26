@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="btn-continuar">
-      <router-link to="/padres"
+      <router-link to="/abuelos"
         ><button class="ui button purple">
           Continuar<i class="play icon" style="padding-left: 16px"></i></button
       ></router-link>

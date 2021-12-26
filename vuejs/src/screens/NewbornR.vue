@@ -88,7 +88,7 @@
               <label>Fue Registrado</label>
               <InputCheckBox :first-option="'Muerto'" :second-option="'Vivo'" />
             </div>
-            <div class="field">
+            <div class="field six wide">
               <ComboBox
                 :first-item="'Seleccione una opción'"
                 :title-combo="'Comparecio'"
