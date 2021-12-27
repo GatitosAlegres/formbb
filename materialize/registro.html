@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="section container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row card-panel">
+                    <div class="col s12">
+                        <a href="index.html">
+                            <i class="material-icons" style="font-size: 50px; color: black;">chevron_left</i>
+                        </a>
+                    </div>
+                    
+                    <div class="col s12" style="color: rgb(161, 160, 159);">
+                        <h5>REGISTRO DEL NACIDO</h5><br>
+                    </div>
+
+                    <div class="form-field col s6">
+                        <label for="">Apellidos</label>
+                        <fieldset class="fieldset">
+                            <label for="">Paterno</label>
+                            <input type="text" id="paterno"> 
+                        </fieldset>
+
+                        <fieldset class="fieldset">
+                            <label for="">Materno</label>
+                            <input type="text" id="materno">  
+                        </fieldset><br>
+                       
+                        <label for="">Nombres</label>
+                        <input type="text" id="nombres"><br>
+
+                        <label for="">Sexo</label>
+                        <fieldset class="fieldset">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span>Masculino</span>
+                                  </label>
+                                </p>
+                                <p>
+                                  <label>
+                                    <input name="group1" type="radio" />
+                                    <span>Femenino</span>
+                                  </label>
+                                </p>
+                            </form> 
+
+                        </fieldset>
+                        
+                        <label for="">Fecha de Nacimiento:</label>
+                        <input class="fa-calendar" type="date"></input> <br>
+
+                        <label for="">Hora de Nacimiento:</label>
+                        <input type="time"></input> <br>
+              
+                    </div>
+
+                    <div class="form-field col s6">
+                        <label for="">N° de certificado de nacimiento</label>
+                        <select class="browser-default">
+                            <option value="" disabled selected></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select><br>
+
+                        <label for="">Lugar de Nacimiento:</label>
+                        <fieldset class="fieldset">
+                            <label for="">Departamento</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected></option>
+                                <option value="1">Lima</option>
+                                <option value="2">La Libertad</option>
+                            </select><br>
+
+                            <label for="">Provincia</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected></option>
+                                <option value="1">Chepen</option>
+                                <option value="2">Trujillo</option>
+                            </select> <br>
+
+                            <label for="">Localidad</label>
+                            <select class="browser-default">
+                                <option value="" disabled selected></option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select><br>
+                        </fieldset>
+
+                        <label for="">Donde se atendio el parto</label>
+                        <select class="browser-default">
+                            <option value="" disabled selected></option>
+                            <option value="1">Hospital</option>
+                            <option value="2">Cínica</option>
+                        </select><br>
+
+                        <label for="">Fue registrado:</label>
+                        <fieldset class="fieldset">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input name="group1" type="radio" checked />
+                                    <span>Vivo</span>
+                                  </label>
+                                </p>
+                                <p>
+                                  <label>
+                                    <input name="group1" type="radio" />
+                                    <span>Muerto</span>
+                                  </label>
+                                </p>
+                            </form>
+                        </fieldset>
+                        
+                        <label for="">Comparecio</label>
+                        <select class="browser-default">
+                            <option value="" disabled selected></option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option </option>
+                        </select>
+
+                    </div>
+
+                    <div class="col s12" style="display: flex; justify-content: end; margin-top: 50px; ">
+                        <a class="waves-effect waves-light btn" href="registropa.html">
+                            <i class="material-icons right">play_arrow</i>Continuar
+                        </a>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

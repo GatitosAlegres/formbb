@@ -1,0 +1,15 @@
+h4 {
+    font-weight: bolder;
+}
+
+h5 {
+    color: rgb(161, 160, 159);
+}
+
+h6 {
+    text-align: center;
+}
+
+.fieldset {
+    border:0 none;
+}
