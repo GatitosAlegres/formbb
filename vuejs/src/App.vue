@@ -1,16 +1,15 @@
-<template>
-  <GeneralData title="ACTA DE NACIMIENTO" subtitle="REGRISTRO CIVIL"/>
+
+<template >
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script>
-import GeneralData from './components/GeneralData.vue'
-
 export default {
-  name: 'App',
-  components: {
-    GeneralData
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
