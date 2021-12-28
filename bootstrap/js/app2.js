@@ -32,6 +32,14 @@ const nationalities = [
   "Dinamarca",
 ];
 
+const ages = (min, max) => {
+  const data = [];
+  for (let i = min; i <= max; i++) {
+    data.push(i);
+  }
+  return data;
+};
+
 const nationalityFather = document.querySelector("#nationalityFather");
 const loadNationalitiesFather = () => {
     nationalities.forEach((nacionalidad) => {
@@ -53,3 +61,25 @@ const loadNationalitiesMum = () => {
   });
 };
 loadNationalitiesMum();
+
+const ageFather = document.querySelector("#ageFather");
+const loadAgesFather = () => {
+  ages(15, 100).forEach((age) => {
+    const option = document.createElement("option");
+    option.value = age;
+    option.innerHTML = age;
+    ageFather.appendChild(option);
+  });
+};
+loadAgesFather();
+
+const ageMum = document.querySelector("#ageMum");
+const loadAgesMum = () => {
+  ages(15, 100).forEach((age) => {
+    const option = document.createElement("option");
+    option.value = age;
+    option.innerHTML = age;
+    ageMum.appendChild(option);
+  });
+};
+loadAgesMum();
