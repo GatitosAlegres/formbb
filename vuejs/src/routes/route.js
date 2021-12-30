@@ -24,7 +24,7 @@ const routes = [
     path: "/abuelos",
     name: "GrandparentsR",
     component: GrandparentsR,
-  },
+  }
 ];
 
 const router = createRouter({
